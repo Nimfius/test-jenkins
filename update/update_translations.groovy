@@ -2,9 +2,8 @@ def call(){
 	DisasterRecoveryMode: [Boolean] 
 	region = GetRegion()
 	stage('my stage'){
-		agent any
 		steps{
-			echo "Deploying on region"
+			echo "Deploying on ${region} region"
 		}
 	}
 }
