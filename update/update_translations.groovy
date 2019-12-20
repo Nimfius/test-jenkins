@@ -9,7 +9,7 @@ def call(){
 }
 
 def GetRegion() {
-	if ( params.DisasterRecoveryMode ){
+	if ( config.DisasterRecoveryMode ){
 		return "eu-central-1"
 	}
 	else {
