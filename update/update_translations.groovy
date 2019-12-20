@@ -1,4 +1,5 @@
 def call(){
+	DisasterRecoveryMode: [String] 
 	region = GetRegion()
 	stage('my stage'){
 		agent any
