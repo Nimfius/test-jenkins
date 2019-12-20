@@ -1,5 +1,4 @@
 def call(){
-	DisasterRecoveryMode: [Boolean] 
 	region = GetRegion()
 	stage('my stage'){
 		echo "Deploying on ${region} region"
@@ -7,7 +6,7 @@ def call(){
 }
 
 def GetRegion() {
-	if ( config.DisasterRecoveryMode ){
+	if ( params.DisasterRecoveryMode ){
 		return "eu-central-1"
 	}
 	else {
