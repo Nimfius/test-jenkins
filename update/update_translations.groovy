@@ -4,7 +4,7 @@ def call(){
 	stage('my stage'){
 		agent any
 		steps{
-			echo "Deploying on ${region} region"
+			echo "Deploying on region"
 		}
 	}
 }
